@@ -1,0 +1,11 @@
+<p>eventbinding works!</p>
+
+<button id="button1" (click)="button1Click()" style="color: blue;">Button1 click event</button>
+<br>
+<button id="button2" (click)="button2Click()" style="color: blue;">Button1 click event</button>
+<br>
+<input id="textbox1" placeholder="button1 on value change" (input)="onChangeInput()"/>
+<br>
+<input id="textbox2" placeholder="capture event" (input)="onChangeLabelInput($event)"/>
+
+<h3>{{label}}</h3>
