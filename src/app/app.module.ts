@@ -9,6 +9,7 @@ import { StudentComponent } from './student/student.component';
 import { PropertbindingComponent } from './propertbinding/propertbinding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { CountcheckComponent } from './countcheck/countcheck.component';
+import { SwitchexComponent } from './switchex/switchex.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CountcheckComponent } from './countcheck/countcheck.component';
     StudentComponent,
     PropertbindingComponent,
     EventbindingComponent,
-    CountcheckComponent
+    CountcheckComponent,
+    SwitchexComponent
   ],
   imports: [
     BrowserModule,
