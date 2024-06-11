@@ -10,6 +10,7 @@ import { PropertbindingComponent } from './propertbinding/propertbinding.compone
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { CountcheckComponent } from './countcheck/countcheck.component';
 import { SwitchexComponent } from './switchex/switchex.component';
+import { StrengthPipe } from './strength.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SwitchexComponent } from './switchex/switchex.component';
     PropertbindingComponent,
     EventbindingComponent,
     CountcheckComponent,
-    SwitchexComponent
+    SwitchexComponent,
+    StrengthPipe
   ],
   imports: [
     BrowserModule,
