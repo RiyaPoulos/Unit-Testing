@@ -11,6 +11,8 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { CountcheckComponent } from './countcheck/countcheck.component';
 import { SwitchexComponent } from './switchex/switchex.component';
 import { StrengthPipe } from './strength.pipe';
+import { PosComponent } from './pos/pos.component';
+import { PostComponent } from './post/post.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { StrengthPipe } from './strength.pipe';
     EventbindingComponent,
     CountcheckComponent,
     SwitchexComponent,
-    StrengthPipe
+    StrengthPipe,
+    PosComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
