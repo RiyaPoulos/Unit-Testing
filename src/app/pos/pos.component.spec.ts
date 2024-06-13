@@ -29,10 +29,16 @@ describe('PosComponent', () => {
       },
     ];
     mockPostService = jasmine.createSpyObj(['getPosts', 'deletePost']);
+    mockPostService.getPosts.and.returnValue(of(POSTS));
+    mockPostService.deletePost.and.returnValue(of(true));
     component=new PosComponent(mockPostService);
     await TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
       declarations: [ PosComponent ],
+      providers:[{
+        provide:PosService,
+        useValue:mockPostService
+      }]
     
     })
     .compileComponents();
@@ -44,6 +50,12 @@ describe('PosComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should set the post from service directly', () => {
+    mockPostService.getPosts.and.returnValue(of(POSTS));
+    fixture.detectChanges();
+    expect(component.posts.length).toBe(3);
   });
 
   it('should delete the selected post from the post', () => {
